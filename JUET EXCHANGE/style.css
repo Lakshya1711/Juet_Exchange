@@ -9,6 +9,34 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
 nav{
     background: blue;
     height: 80px;
@@ -99,8 +127,57 @@ a.active,a:hover{
         left:0;
     }
 }
-section{
-    background: url("Img/Exchange.png") no-repeat;
-    background-size: cover;    
-    height: calc(100vh - 80px);
+
+#Left{
+	background-image: url("Img/Exchange.png");
+	height: 90vh;
+	width: 100%;
+	background-size:cover;
+	background-position: top 25% right 0;
+	padding: 0 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+#Left h4{
+	padding-bottom: 15px;
+    color: #fbfbfb;
+}
+#Left h1{
+	color: #fbfbfb;
+}
+#Left p{
+    color: #fbfbfb;
+}
+#Left button{
+	background-color: brown;
+	color: #fcfcfc;
+	border: 0;
+	padding: 14px 80px 14px 65px;
+}
+
+#Right{
+    text-align: right;
+    position: relative;
+    right: -80%;
+    text-align: justify;
+}
+
+#Right h4{
+	padding-bottom: 15px;
+    color: #fbfbfb;
+}
+#Right h1{
+	color: #fbfbfb;
+}
+#Right p{
+    color: #fbfbfb;
+}
+#Right button{
+	background-color: brown;
+	color: #fcfcfc;
+	border: 0;
+	padding: 14px 80px 14px 65px;
 }
