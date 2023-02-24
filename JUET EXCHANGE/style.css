@@ -274,7 +274,7 @@ input[type="submit"]{
     outline: none;
 }
 input[type="submit"]:hover{
-    border-color: #2691d9;
+    border-color: #222;
     transition: .5s;   
 }
 .signuplink{
@@ -290,4 +290,102 @@ input[type="submit"]:hover{
 .signuplink a:hover{
     text-decoration: underline;
     background-color: #a6a6a6;
+}
+
+.container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 900px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0 15px;
+}
+.container h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.container form{
+    position: relative;
+    min-height: 490px;
+    background-color: #fff;
+    margin-top: 16px;
+}
+.container form .details{
+    margin-top: 30px;
+}
+.container form .details.ID{
+    margin-top: 20px;
+}
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input{
+    outline: none;
+    border: 1px solid #aaa;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+.input-field input[type="date"]{
+    color: #707070;
+}
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+
+.container form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #222;
 }
